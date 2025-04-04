@@ -1,16 +1,41 @@
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container {
-      width: 90%;
-      padding: 15px;
+        width: 90%;
+        padding: 15px;
     }
-  
+
     h1 {
-      font-size: 20px;
+        font-size: 20px;
     }
-  
-    select, input, button {
-      font-size: 14px;
-      padding: 8px;
+
+    .logo {
+        width: 35px;
+        height: 35px;
     }
-  }
-  
+
+    .car-image {
+        width: 80px;
+    }
+
+    .input-container {
+        gap: 10px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    input, select {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .result {
+        font-size: 16px;
+    }
+}
