@@ -1,0 +1,16 @@
+@media (max-width: 768px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    select, input, button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
