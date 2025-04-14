@@ -1,0 +1,183 @@
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8b2c3b;
+  color: white;
+  padding: 16px 32px;
+  flex-wrap: wrap;
+}
+
+.cabecalho h1 {
+  margin: 0;
+}
+
+.cabecalho nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.botao-conta {
+  background-color: #d87b8c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Layout principal do codigoooooo */
+.container-app {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.principal {
+  display: flex;
+  padding: 32px;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Coluna esquerdaaaa */
+.esquerda {
+  max-width: 400px;
+}
+
+.esquerda h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.esquerda p {
+  font-size: 1rem;
+  margin-bottom: 16px;
+}
+
+.imagem-ipva {
+  max-width: 300px;
+  height: auto;
+}
+
+/* Coluna direita (parte doformulário) */
+.direita {
+  background-color: #e0e0e0;
+  padding: 24px;
+  border-radius: 12px;
+  min-width: 350px;
+  max-width: 500px;
+  width: 100%;
+}
+
+/* Estilo dos campos do formulário */
+.grupo-formulario label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.grupo-formulario select,
+.grupo-formulario input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #9b3e4e;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Resultado */
+.area-resultados {
+  margin-bottom: 16px;
+}
+
+.caixa-valor {
+  background-color: #9b3e4e;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+  margin: 8px 0 16px;
+  text-align: center;
+}
+
+/* Botão Calcular */
+.botao-calcular {
+  width: 100%;
+  background-color: #9b3e4e;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.botao-calcular:hover {
+  background-color: #802c3d;
+}
+
+/* parte de Responsivo */
+@media (max-width: 768px) {
+  .principal {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .direita {
+    min-width: unset;
+    width: 100%;
+  }
+
+  .imagem-ipva {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .cabecalho {
+    padding: 16px;
+  }
+
+  .principal {
+    padding: 16px;
+  }
+
+  .esquerda h2 {
+    font-size: 1.4rem;
+  }
+
+  .esquerda p {
+    font-size: 0.95rem;
+  }
+
+  .grupo-formulario select,
+  .grupo-formulario input {
+    font-size: 0.95rem;
+  }
+
+  .botao-calcular {
+    font-size: 1rem;
+  }
+}
